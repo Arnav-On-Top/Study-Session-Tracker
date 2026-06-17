@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+#themeToggle {
+    display: none;
+}
+.themeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#themeToggle:checked ~ .page .container{
+    background-color: #1f1f1f;
+    color:white;
+    min-height: 100vh;
+}
+#themeToggle:checked ~ .page input {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #444;
+}
+#themeToggle:checked ~ .page li {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: white;
+}
+.container {
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+#timer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.summary,
+.history {
+    margin-top: 20px;
+}
+.summary h3,
+.history h3 {
+    margin-bottom: 10px;
+}
+#sessionList {
+    list-style: none;
+}
+#sessionList li {
+    background-color: #eef3fb;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
