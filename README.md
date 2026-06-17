@@ -4,4 +4,4 @@ This website takes the subject name from you and on pressing start, starts the t
 
 As you add more subject time, it keeps saving it under the Study History and updates the total time spent studying under Total Study Time.
 
-It is linked to localhost meaning it wont reset if you refresh or close it.
+It is linked to localhost meaning it wont reset if you refresh or close it. Dark Mode can be enabled
